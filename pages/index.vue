@@ -29,7 +29,7 @@
       <!-- Text Section -->
       <div class="flex items-center justify-center p-8 bg-gray-100 mybg">
         <h4 class="text-[20px] font-bold leading-tight p-12">
-          <span class="text-5xl pb-4">Revolutionized medicine</span> <br/>developing life-saving drugs, vaccines, and treatments that have extended and improved countless lives.
+          <span class="text-5xl pb-4">Revolutionized medicine</span> <br/>Developing life-saving drugs, vaccines, and treatments that have extended and improved countless lives.
         </h4>
       </div>
   

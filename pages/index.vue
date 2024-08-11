@@ -3,12 +3,14 @@
     <!-- Navigation -->
     <nav class="mybg p-4">
       <div class="container mx-auto flex justify-between items-center">
-        <NuxtLink to="/" class=" text-xl font-bold">Logo</NuxtLink>
+        <NuxtLink to="/" class="text-xl font-bold">
+          <img src="/assets/images/sierra.svg" alt="Sierra logo" class="h-12">
+        </NuxtLink>        
         <div class="hidden md:flex space-x-4">
-          <NuxtLink to="/" class=" hover:text-blue-200">Home</NuxtLink>
-          <NuxtLink to="/about" class=" hover:text-blue-200">About</NuxtLink>
-          <NuxtLink to="/services" class=" hover:text-blue-200">Services</NuxtLink>
-          <NuxtLink to="/contact" class=" hover:text-blue-200">Contact</NuxtLink>
+          <NuxtLink to="/" class="hover:text-blue-200">Home</NuxtLink>
+          <NuxtLink to="/about" class="hover:text-blue-200">About</NuxtLink>
+          <NuxtLink to="/services" class="hover:text-blue-200">Services</NuxtLink>
+          <NuxtLink to="/contact" class="hover:text-blue-200">Contact</NuxtLink>
         </div>
         <button @click="toggleMenu" class="md:hidden text-white focus:outline-none">
           <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -23,6 +25,7 @@
         <NuxtLink to="/contact" class="block text-white py-2">Contact</NuxtLink>
       </div>
     </nav>
+    
 
     <!-- Main Content -->
     <div class="grid grid-cols-1 md:grid-cols-2 mybg">

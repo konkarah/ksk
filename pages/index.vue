@@ -168,9 +168,9 @@ const selectedService = ref(null);
 
 const services = [
   // Example services data
-  { id: 1, name: 'Service 1', description: 'Description for service 1', image: 'https://images.pexels.com/photos/3844581/pexels-photo-3844581.jpeg', fullDescription: 'Full description for service 1', keyFeatures: ['Feature 1', 'Feature 2'] },
-  { id: 2, name: 'Service 2', description: 'Description for service 2', image: 'https://images.pexels.com/photos/3844581/pexels-photo-3844581.jpeg', fullDescription: 'Full description for service 2', keyFeatures: ['Feature 1', 'Feature 2'] },
-  { id: 3, name: 'Service 3', description: 'Description for service 3', image: 'https://images.pexels.com/photos/3844581/pexels-photo-3844581.jpeg', fullDescription: 'Full description for service 3', keyFeatures: ['Feature 1', 'Feature 2'] },
+  { id: 1, name: 'Equipment Manufacturing', description: 'We manufacture a wide range of electronic equipment', image: 'https://images.pexels.com/photos/3844581/pexels-photo-3844581.jpeg', fullDescription: 'Full description for service 1', keyFeatures: ['Feature 1', 'Feature 2'] },
+  { id: 2, name: 'Medicine Manufacturing', description: 'We develop approved medications for use by the general public', image: 'https://images.pexels.com/photos/3683098/pexels-photo-3683098.jpeg', fullDescription: 'Full description for service 2', keyFeatures: ['Feature 1', 'Feature 2'] },
+  { id: 3, name: 'Genetic Research', description: 'We undertake research on behalf of clients to discover and correlate phenomena', image: 'https://images.pexels.com/photos/1059161/pexels-photo-1059161.jpeg', fullDescription: 'Full description for service 3', keyFeatures: ['Feature 1', 'Feature 2'] },
 ];
 
 const testimonials = [

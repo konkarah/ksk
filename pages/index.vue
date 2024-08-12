@@ -7,10 +7,10 @@
           <img src="/assets/images/sierra.svg" alt="Sierra logo" class="h-12">
         </NuxtLink>        
         <div class="hidden md:flex space-x-4">
-          <NuxtLink to="/" class="hover:text-blue-200">Home</NuxtLink>
-          <NuxtLink to="/about" class="hover:text-blue-200">About</NuxtLink>
-          <NuxtLink to="/services" class="hover:text-blue-200">Services</NuxtLink>
-          <NuxtLink to="/contact" class="hover:text-blue-200">Contact</NuxtLink>
+          <NuxtLink to="/" class="hover:text-green-200">Home</NuxtLink>
+          <NuxtLink to="/about" class="hover:text-green-200">About</NuxtLink>
+          <NuxtLink to="/services" class="hover:text-green-200">Services</NuxtLink>
+          <NuxtLink to="/contact" class="hover:text-green-200">Contact</NuxtLink>
         </div>
         <button @click="toggleMenu" class="md:hidden text-white focus:outline-none">
           <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -52,7 +52,7 @@
             <div class="p-6">
               <h3 class="text-xl font-semibold text-gray-800 mb-2">{{ service.name }}</h3>
               <p class="text-gray-600 mb-4">{{ service.description }}</p>
-              <button @click="openModal(service)" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">
+              <button @click="openModal(service)" class="mycol text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">
                 Learn More
               </button>
             </div>
@@ -127,7 +127,7 @@
             <textarea v-model="form.message" id="message" rows="4" class="w-full p-3 border border-gray-300 rounded" required></textarea>
           </div>
           <div class="flex items-center justify-center">
-            <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600 transition duration-300">
+            <button type="submit" class="mycol text-white px-6 py-3 rounded hover:bg-blue-600 transition duration-300">
               Send Message
             </button>
           </div>
@@ -135,7 +135,7 @@
       </div>
     </section>
   </div>
-  <footer class="bg-blue-500 text-white py-8">
+  <footer class="mycol text-white py-8">
     <div class="container mx-auto px-4">
       <div class="flex flex-col md:flex-row justify-between items-center">
         <div class="text-center md:text-left">
@@ -214,5 +214,8 @@ function handleSubmit() {
 <style>
 .mybg{
   background-color: rgb(193,216,212);
+}
+.mycol{
+  background-color: rgb(158,40,41) ;
 }
 </style>

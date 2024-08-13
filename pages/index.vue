@@ -138,13 +138,15 @@
   <footer class="mycol text-white py-8">
     <div class="container mx-auto px-4">
       <div class="flex flex-col md:flex-row justify-between items-center">
-        <div class="text-center md:text-left">
-          <h5 class="text-xl font-bold mb-2">Contact Us</h5>
-          <p>123 Main Street, City, Country</p>
-          <p>Email: contact@yourdomain.com</p>
-          <p>Phone: (123) 456-7890</p>
+        <!-- Get in Touch Section -->
+        <div class="text-center md:text-left mb-6 md:mb-0">
+          <h5 class="text-xl font-bold mb-2">Get in Touch</h5>
+          <p class="mb-2">147 W 35th St, New York, NY 10001</p>
+          <p class="mb-2">Phone: +1 (917) 6094-597</p>
+          <p>Email: <a href="mailto:info@zemy-group.com" class="hover:text-gray-400">info@zemy-group.com</a></p>
         </div>
-        <div class="mt-4 md:mt-0">
+        <!-- Follow Us Section -->
+        <div class="text-center md:text-left mt-4 md:mt-0">
           <h5 class="text-xl font-bold mb-2">Follow Us</h5>
           <div class="flex justify-center md:justify-start space-x-4">
             <a href="#" class="text-white hover:text-blue-200">Facebook</a>
@@ -153,11 +155,13 @@
           </div>
         </div>
       </div>
+      <!-- Copyright Text -->
       <div class="text-center mt-6">
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <p>&copy; 2024 Zemy Group LLC. All rights reserved.</p>
       </div>
     </div>
   </footer>
+  
 </template>
 
 <script setup>

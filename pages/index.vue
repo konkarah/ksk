@@ -1,16 +1,15 @@
 <template>
+  <Navbar />
   <div>
     <!-- Navigation -->
-
-    <!-- Navigation -->
-    <nav class="mybg p-4">
+    <!-- <nav class="mybg p-4">
       <div class="container mx-auto flex justify-between items-center">
         <NuxtLink to="/" class="text-xl font-bold">
           <img src="/assets/images/sierra.svg" alt="Sierra logo" class="h-12">
         </NuxtLink>
         <div class="hidden md:flex space-x-4">
           <NuxtLink to="/" class="hover:text-green-200">Home</NuxtLink>
-          <NuxtLink to="/about" class="hover:text-green-200">About</NuxtLink>
+          <NuxtLink to="/about-us" class="hover:text-green-200">About</NuxtLink>
           <NuxtLink to="/services" class="hover:text-green-200">Services</NuxtLink>
           <NuxtLink to="/contact" class="hover:text-green-200">Contact</NuxtLink>
         </div>
@@ -26,7 +25,7 @@
         <NuxtLink to="/services" class="block text-white py-2">Services</NuxtLink>
         <NuxtLink to="/contact" class="block text-white py-2">Contact</NuxtLink>
       </div>
-    </nav>
+    </nav> -->
 
 
     <!-- Main Content -->
@@ -176,6 +175,7 @@
 
 <script setup>
 import { ref } from 'vue';
+import Navbar from '~/layouts/navbar.vue';
 
 const isMenuOpen = ref(false);
 const selectedService = ref(null);
@@ -225,10 +225,12 @@ function handleSubmit() {
 
 </script>
 
-<style>.mybg {
+<style scoped>
+.mybg {
   background-color: rgb(193, 216, 212);
 }
 
 .mycol {
   background-color: rgb(158, 40, 41);
-}</style>
+}
+</style>

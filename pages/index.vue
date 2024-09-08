@@ -1,11 +1,13 @@
 <template>
   <div>
     <!-- Navigation -->
+
+    <!-- Navigation -->
     <nav class="mybg p-4">
       <div class="container mx-auto flex justify-between items-center">
         <NuxtLink to="/" class="text-xl font-bold">
           <img src="/assets/images/sierra.svg" alt="Sierra logo" class="h-12">
-        </NuxtLink>        
+        </NuxtLink>
         <div class="hidden md:flex space-x-4">
           <NuxtLink to="/" class="hover:text-green-200">Home</NuxtLink>
           <NuxtLink to="/about" class="hover:text-green-200">About</NuxtLink>
@@ -25,17 +27,18 @@
         <NuxtLink to="/contact" class="block text-white py-2">Contact</NuxtLink>
       </div>
     </nav>
-    
+
 
     <!-- Main Content -->
     <div class="grid grid-cols-1 md:grid-cols-2 mybg">
       <!-- Text Section -->
       <div class="flex items-center justify-center p-8 bg-gray-100 mybg">
         <h4 class="text-[20px] font-bold leading-tight p-12">
-          <span class="text-5xl pb-4">Revolutionized medicine</span> <br/>Developing life-saving drugs, vaccines, and treatments that have extended and improved countless lives.
+          <span class="text-5xl pb-4">Revolutionized medicine</span> <br />Developing life-saving drugs, vaccines, and
+          treatments that have extended and improved countless lives.
         </h4>
       </div>
-  
+
       <!-- Image Section -->
       <div class="flex items-center justify-center bg-auto bg-no-repeat bg-center">
         <img src="~/assets/images/bg5.jpg" alt="Medical Background" class="object-cover h-full w-full">
@@ -52,7 +55,8 @@
             <div class="p-6">
               <h3 class="text-xl font-semibold text-gray-800 mb-2">{{ service.name }}</h3>
               <p class="text-gray-600 mb-4">{{ service.description }}</p>
-              <button @click="openModal(service)" class="mycol text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">
+              <button @click="openModal(service)"
+                class="mycol text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">
                 Learn More
               </button>
             </div>
@@ -64,13 +68,17 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
       <!-- Image Section -->
       <div class="flex items-center justify-center">
-        <img src="~/assets/images/bg7.jpg" alt="Medical Innovation" class="w-full h-auto object-cover rounded-lg shadow-md">
+        <img src="~/assets/images/bg7.jpg" alt="Medical Innovation"
+          class="w-full h-auto object-cover rounded-lg shadow-md">
       </div>
       <!-- Text Section -->
       <div class="flex items-center justify-center p-4">
         <div class="max-w-lg text-center md:text-left">
           <h5 class="font-bold text-xl md:text-xl lg:text-xl mb-4">
-            At the forefront of medical innovation, we are revolutionizing the field of medicine with cutting-edge drugs, vaccines, and treatments. Our pioneering solutions are not just advancing science but are crucial in saving lives and improving the quality of countless others. Join us in our mission to continue this life-changing journey and make a profound impact on global health.
+            At the forefront of medical innovation, we are revolutionizing the field of medicine with cutting-edge drugs,
+            vaccines, and treatments. Our pioneering solutions are not just advancing science but are crucial in saving
+            lives and improving the quality of countless others. Join us in our mission to continue this life-changing
+            journey and make a profound impact on global health.
           </h5>
         </div>
       </div>
@@ -101,7 +109,8 @@
             {{ feature }}
           </li>
         </ul>
-        <button @click="closeModal" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">
+        <button @click="closeModal"
+          class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">
           Close
         </button>
       </div>
@@ -120,11 +129,13 @@
           </div>
           <div class="mb-4">
             <label for="email" class="block text-gray-700 text-sm font-semibold mb-2">Email</label>
-            <input v-model="form.email" id="email" type="email" class="w-full p-3 border border-gray-300 rounded" required>
+            <input v-model="form.email" id="email" type="email" class="w-full p-3 border border-gray-300 rounded"
+              required>
           </div>
           <div class="mb-4">
             <label for="message" class="block text-gray-700 text-sm font-semibold mb-2">Message</label>
-            <textarea v-model="form.message" id="message" rows="4" class="w-full p-3 border border-gray-300 rounded" required></textarea>
+            <textarea v-model="form.message" id="message" rows="4" class="w-full p-3 border border-gray-300 rounded"
+              required></textarea>
           </div>
           <div class="flex items-center justify-center">
             <button type="submit" class="mycol text-white px-6 py-3 rounded hover:bg-blue-600 transition duration-300">
@@ -161,7 +172,6 @@
       </div>
     </div>
   </footer>
-  
 </template>
 
 <script setup>
@@ -215,11 +225,10 @@ function handleSubmit() {
 
 </script>
 
-<style>
-.mybg{
-  background-color: rgb(193,216,212);
+<style>.mybg {
+  background-color: rgb(193, 216, 212);
 }
-.mycol{
-  background-color: rgb(158,40,41) ;
-}
-</style>
+
+.mycol {
+  background-color: rgb(158, 40, 41);
+}</style>
